@@ -1,0 +1,220 @@
+body{background-color:lightgrey;
+    color:grey;
+    margin:fixed;}
+
+
+header{text-align:center;
+       font-size:16pt;
+        color:RED;
+       margin-bottom:10px;
+       margin-top:30px;
+       text-shadow:1px 3px 3px BLACK;
+       font-family:Cursive;}
+
+#list{background:black;
+     margin:fixed;
+  font-family:cursive;
+  padding:7px 5px;
+  border:5px white;
+  border-radius:5px;} 
+
+#list h4{font-size:16px;}
+
+#list ul{list-style:none;
+        display:flex;
+        margin:0;
+        padding:10px 10px;
+        justify-content:space-around;
+        background:;}
+
+#list a{color:yellow;
+     text-decoration:none;
+     display:block;
+     font-size:25px;
+     padding: 10px;
+     transition-duration:1s;}
+
+#list a:hover{color:burlywood;
+transition-duration:1s;}
+
+
+/*RICE*/
+
+.char{margin-bottom:10px;
+     color:orange;}
+
+div p{text-indent:30px;}
+
+div#rice img{width:400px;
+            height:auto;
+            margin-top:-5px;
+            margin-bottom:0px;
+            border:2px solid grey;
+            border-radius:5px;
+            transition-duration:2s;}
+
+/*div#rice img:hover{transform:scale(2);
+                  margin:50px 100px; 
+                   transition-duration:2.2s;}*/
+
+#rice h2 span {color:Orange;}
+
+#just{text-align:center;}
+
+div#rice p{margin-left:15px;}
+
+.cook {margin-bottom:-10px;
+      color:teal;}
+
+/*RICE END*/
+
+/*Curry*/
+div#curry img{width:300px;
+            height:auto;
+            margin-top:-5px;
+            margin-bottom:0px;
+            border:2px solid grey;
+            border-radius:5px;
+            transition-duration:2.2s;}
+
+/* div#curry img:hover{transform:scale(2);
+                  margin:50px 100px; 
+                   transition-duration:2.2s;} */
+
+#cent{text-align:center;}
+
+#curry h2{color:orange;}
+
+h {color:teal;
+ font-size:23px;
+ text-align:left;}
+
+#curry >h3{color:teal;
+         margin-bottom:-11px;}
+
+T{ margin-top:-100px;
+   color:green;
+   font-size:13pt;}
+
+#pork ul {margin-top:1px;
+         background-color:black;
+         border:3px;
+         border-radius:5px;
+         padding-right:1px;
+         padding-top:20px;
+         padding-bottom:18px;
+         margin-left:1px;}
+
+#poultry ul{margin-top:10px;
+           background-color:black;
+           border:3px;
+           border-radius:5px;
+           padding-right:1px;
+           padding-top:20px;
+           padding-bottom:18px;
+           margin-left:1px;}
+
+#beef ul {margin-top:10px;
+         background-color:black;
+         border:3px;
+         border-radius:5px;
+         padding-right:1px;
+         padding-top:20px;
+         padding-bottom:18px;
+         margin-left:1px;}
+
+#other>h3{font-size:17px;}
+
+#refer {color:Black;
+  font-size:16px;
+  text-align:right;}
+
+/*CURRY END */
+
+/*footer*/
+#me{color:black;}
+
+.sugest{color:black;}
+
+textarea{border:1px;
+         border-radius:5px;
+         width:300px;
+         height:110px;}
+
+input {margin-top:30px;
+   margin-bottom:-10;
+   width:200px;
+   height:30px;
+   border-radius: 3px;
+   background-color:#efefef;}
+
+form{   
+        border:1px solid grey;
+        border-radius:5px;
+        overflow:hidden;
+        width:320px;
+        margin-left:1px;}
+
+fieldset{border:0;
+        margin:0;
+        padding:0;}
+
+.info{ padding: 30px 50px 0 50px;
+         display:block;}
+
+.info input { border: 1px solid#fff;
+             box-shadow :1px;
+             color:#636466;
+         padding: 5px 2px 0 5px ;
+         margin-left:5px;
+         margin-top:6px;
+         margin-bottom: 20px;}
+
+.account-action{ background:#fff;
+             border:1px 0 black;
+             padding: 15px;}
+
+.btn{ background-color: #3fb6b2;
+   padding: 10px 40px;
+   margin-left: 70px;
+   margin-bottom: 10px;
+   margin-top:10px;
+   border:0 black;
+   width:150px;
+   float:left;}
+
+.btn:hover{background-color:#43a09d;}
+
+
+/*STREET FOODS*/
+
+div .mohinga img{width:300px;
+            height:auto;
+            margin-top:-5px;
+            margin-bottom:0px;
+            border:2px solid grey;
+            border-radius:5px;
+            transition-duration:2.2s;}
+
+/*div .mohinga img:hover{transform:scale(2);
+                  margin:50px 100px; 
+                  transition-duration:2.2s;} */
+
+.mohinga {text-align:center;}
+
+/*wife*/
+
+.husband-wife img{
+                width:300px;
+                height:auto;
+                margin-top:-5px;
+                margin-bottom:0px;
+                border:2px solid grey;
+                border-radius:5px;
+                transition-duration:2.2s;}
+
+.husband-wife{text-align:center;}
+
+#terms{text-align:right;
+      font-size:12px;
+      color:black;}
