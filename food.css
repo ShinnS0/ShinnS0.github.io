@@ -44,7 +44,8 @@ transition-duration:1s;}
      color:orange;}
 
 div p{text-indent:30px;
-      text-align: justify;}
+      text-align: justify;
+      font-size: small;}
 
 div#rice img{width:auto;
             height:auto;
