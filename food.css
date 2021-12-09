@@ -18,7 +18,7 @@ header{text-align:center;
   border:5px white;
   border-radius:5px;} 
 
-#list h4{font-size:16px;}
+#list h4{font: size 15px;}
 
 #list ul{list-style:none;
         display:flex;
@@ -30,7 +30,7 @@ header{text-align:center;
 #list a{color:yellow;
      text-decoration:none;
      display:block;
-     font-size:25px;
+     font-size:20px;
      padding: 10px;
      transition-duration:1s;}
 
@@ -192,6 +192,8 @@ fieldset{border:0;
 
 /*STREET FOODS*/
 
+#street-foods h2{color: orange;}
+
 div .mohinga img{width:300px;
             height:auto;
             margin-top:-5px;
@@ -218,6 +220,9 @@ div .mohinga img{width:300px;
                 transition-duration:2.2s;}
 
 .husband-wife{text-align:center;}
+
+/* footer */
+#refer{font-size: 13px;}
 
 #terms{text-align:right;
       font-size:10px;
