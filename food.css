@@ -43,7 +43,8 @@ transition-duration:1s;}
 .char{margin-bottom:10px;
      color:orange;}
 
-div p{text-indent:30px;}
+div p{text-indent:30px;
+      text-align: justify;}
 
 div#rice img{width:auto;
             height:auto;
