@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contact</title>
     <style>
+        body{
+            padding:0%;}
         #nav{text-align:right;}
-        .contact-top{margin-top: -40px;}
-        .contect{text-align: center;}
+
+        .contact-top{margin-top: 5px;}
+
         #terms{font-size: 12px;
                 color: gray;}
+
         textarea{border:1px  solid gray;
          border-radius:5px;
          width:300px;
          height:110px;}
+
+        .contect{text-align: center;}
+
         .btn{ 
             padding: 4px 10px;
-            
-            margin-top: 20px;
-            margin-left:44%;
-            width:150px;
-            float:left;}
+            margin-top: 10px;
+            width:100px;
+            float:none;}
+
         footer{
             padding:50px;
             background-color: black;
@@ -39,15 +45,15 @@
     <main class="contect">
         <div class="contact-top">
         
-            <img src="../images/contact-us.jpg" alt="contact" width="500px" height="auto">
+            <img src="../images/contact-us.jpg" alt="contact" width="300px" height="auto">
         </div>
 
         <div class="textarea">
             <h3>If u have any sugestions or questions u can write is here.</h3>
-            <textarea name="message" placeholder="Message"  type="text" > </textarea></br>
-           
+           <center> <textarea name="message" placeholder="Message"  type="text" > </textarea></center></br>
+            <center><input class="btn" type="submit" value="SEND" /></center>
         </div>
-        <input  class="btn" type="submit" value="SEND" />
+
         <br>
         <br>
         <h1>U can contact me form Here.</h1>
