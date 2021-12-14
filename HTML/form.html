@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #mail{margin-left: 25px;}
+        #name{margin-left: 24px;}
+        #btn{text-align: center;}
+        input {margin-top:30px;
+        margin-bottom:-10;
+        border-radius: 3px;
+        background-color:#efefef;}
+        form{border: 1px solid gray;
+            overflow: hidden;
+            width: 320px;
+            height: auto;}
+    </style>
+</head>
+<body>
+    <form action="request.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="mail">email</label>
+        <input type="email" id="mail" name="mail" required>
+        <br><br>
+        <label for="psw">Password</label>
+        <input type="password" id="psw" name="psw" required>
+        <br><br>
+        <label for="phone">Phone number</label>
+        <input type="number" name="phone" id="phone">
+        <br><br>
+        <label for="photo">Password.</label>
+        <input type="file" accept="image/*" name="passport" id="photo">
+        <br><br>
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+        <input type="radio" name="gender" value="Other" id="other"><label for="other">Other</label>
+        <br><br>
+        <label for="">Hobby</label><br>
+        <input type="checkbox" name="Travelling"  value="Travelling" id="Travelling"><label for="Travelling">Travelling</label>
+        <input type="checkbox" name="football"  value="football" id="football"><label for="football">Football</label>
+        <input type="checkbox" name="Hiking"  value="Hiking" id="Hiking"><label for="Hiking">Hiking</label>
+        <br><br>
+        <label for="">Address</label>
+        <textarea name="address" id="address" cols="20" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="submit" id="btn">
+    </form>
+</body>
+</html>
