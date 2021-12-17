@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double col</title>
+
+    <style>
+        *{margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden;} */}
+
+        .warper{display: inline-flex;
+            width: 100%;
+            height: 100vh;
+            }
+
+        .warper div{width: 100%;
+            /* border: 1px solid black; */
+            text-align: center;
+            line-height: 50vh;}
+
+        .stcol{background-color: saddlebrown;
+            color: sandybrown;}
+        .ndcol{background-color: sandybrown;
+            color: saddlebrown ;}
+        
+        @media(max-width: 700px){
+        .warper{display: block;}
+        }
+        @media(max-width:500px){
+        .warper{display: inline-table;}
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="warper">
+        <div class="stcol">   <h1>This is testing.</h1>    </div>
+        <div class="ndcol"> <h1>Hello world he he.</h1>    </div>
+    </div>
+</body>
+</html>
