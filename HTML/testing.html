@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navugation bar</title>
+
+    <style>
+        body{
+            margin:0;
+            background-color: darkolivegreen;
+        }
+
+        #navi{
+            margin: 0;
+            width: 100vw;
+            background-color: darkslategrey;
+        }
+
+        ul{list-style: none;
+            display: flex;
+            font-weight: bold;
+            margin:0;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1em 0;
+        }
+
+        li a{text-decoration: none;
+            margin-right: 3em;
+            position: relative;
+            color: white;
+            transition: all ease-in-out 500ms;
+        }
+        li a:hover{color: yellow;
+            transition: all ease-in-out 500ms;
+        }
+
+        li:first-child{ margin-right: auto;
+                        margin-left: 3em;
+                    }
+
+        li a::after{content:" ";
+            width:0;
+            height: 0.4em;
+            background-color: yellow;
+            display: block;
+            bottom: -1em;
+            position: absolute;
+            transition: all ease-in-out 500ms;
+        }
+
+        li a:hover::after{width:100%;
+            transition: all ease-in-out 500ms;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="navi">
+
+            <ul>
+                <li><a href="#">Logo</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
