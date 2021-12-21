@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Pass</title>
-    
+    <script src="Result.js"></script>
 </head>
 <body>
     <div id=header> <h1>Exam Result</h1></div>
 
-    <div is="input_data">
+    <div id="input_data">
 
-        <form action="" method="post">
+        <form action="" method="post" id="input">
             <label for="turboc">Turbo C</label>
             <input type="text" placeholder="Enter Turbo C Mark" id="turboc" name="turboc" required>
             <br><br>
@@ -22,9 +22,11 @@
             <label for="javaScript"> JavaScript</label>
             <input type="text" placeholder="Enter JavaScript Mark" id="javaScript" name="javaScript" required>
             <br><br>
-            <input type="submit" value="Result">
+            <input type="submit" value="Result" nclick="MyFunction()">
         </form>
 
     </div>
+
+
 </body>
 </html>
