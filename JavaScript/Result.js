@@ -24,7 +24,7 @@ function result(){
     
     }else if (turboc >= 81 && (java >= 81 && js >= 81)) {
 
-        document.write("This student is passed with colors.");
+        document.write("<h1>This student is passed with colors.</h1>");
     
     }else if (turboc <= 80 && java <= 80 && js <= 80 ){
 
@@ -32,15 +32,15 @@ function result(){
 
     }else if (turboc >= 81 || (java >= 81 && js >= 81)) {
 
-        document.write("This student is passed with colors.");
+        document.write("<h1>This student is passed with colors.</h1>");
     
     }else if (java >= 81 || (turboc >= 81 && js >= 81)) {
 
-        document.write("This student is passed with colors.");
+        document.write("<h1>This student is passed with colors.</h1>");
     
     }else if (js >= 81 || (turboc >= 81 && java >= 81)) {
 
-        document.write("This student is passed with colors.");
+        document.write("<h1>This student is passed with colors.</h1>");
     
     }else {
 
