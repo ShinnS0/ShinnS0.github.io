@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show table Assignment.</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <br><br>
+        <button type="button" onclick="adding()" onclick="add()">Add</button>
+    </form>
+<br><br>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <thead id="thead">
+            <tr>
+                <th>No.</th>
+                <th>Name.</th>
+                <th>Age.</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    
+    <script>
+        let i =0;
+
+        function adding(){
+
+            let name = document.querySelector('#name');
+            let age = document.querySelector('#age');
+
+            let nam1 = name.value;
+            let age1 = age.value;
+            
+             i +=1;
+            let tbody = document.querySelector('#tbody');
+
+            let mydata = document.createElement('tr');
+            mydata.innerHTML = `<td>${i}</td>
+                            <td>${nam1}</td>
+                            <td>${age1}</td>
+                        `;
+            console.log(mydata);
+            tbody.appendChild(mydata);
+        }
+       
+    </script>
+
+</body>
+
+</html>
