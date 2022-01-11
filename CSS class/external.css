@@ -1,0 +1,26 @@
+*{margin: none;}
+
+#external{
+    text-indent: 20px;
+    text-align: justify;
+    color: black;
+    background-color:lightcoral;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 3s;
+    font-weight: bold;
+}
+#external:hover{
+    color:  lightcoral;
+    background-color:black;
+    transition: all 3s;
+}
+h2{
+    /* color:red; */
+    /* color: #000;  */
+    color: rgb(9, 10, 71); 
+}
+a[target="_blank"]{
+    color: red;
+    text-decoration: none;
+}

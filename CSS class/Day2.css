@@ -1,0 +1,49 @@
+/* *{
+    margin: 0;
+} */
+
+/* ID */
+#head{
+    color: royalblue;
+    text-align: center;
+    text-shadow: gray 3px 2px;
+}
+#select{color: #000;}
+
+/* Class */
+.secondp{
+    color: red;
+    line-height: 30px;
+}
+
+/* Type Selector */
+p{
+    color:green;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+/* Pseudo  */
+li:first-child{
+    color:purple ;
+}
+li:last-child{
+    color: red;
+}
+
+a:link{color: blue;}
+a:hover{color: red;}
+a:active{color: purple;}
+a:visited{color:red;}
+
+/* descendent selector */
+ul li{
+    color: royalblue;
+}
+#select a{color:teal;}
+
+/* child selector */
+#select>a{
+    color:red;
+}
+

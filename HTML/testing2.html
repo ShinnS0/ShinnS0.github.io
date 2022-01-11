@@ -5,57 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    body{margin:0;
-        background-color:darkseagreen;}
-   
-    #header_list{margin:0;
-                width: 100vw;
-                background-color: darkslategray;}
 
-    ul {list-style: none;
-        display: flex;
-        padding: 1em 0;
-        position: relative;
-        margin: 0;
-        justify-content: flex-end;
-        align-items: center;}
+    <style>
+        body{
+            margin: 0;
+            background-color: darkturquoise;
+        }
+        #heading{width: 100vw;
+            margin: 0;
+            background-color: darkslategray;
+        }
+        ul{list-style: none;
+            display: flex;
+            padding: 1em 0;
+            margin: 0;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        li a{margin-right: 3em;
+            display: flex;
+            text-decoration: none;
+            position: relative;
+            color: floralwhite;
+            transition:ease-in-out 500ms;
+        }
+        li a:hover{
+            color: gold;
+            transition:ease-in-out 500ms;
+        }
+        li:first-child{margin-right: auto;
+        margin-left: 3em;}
 
-    li a{text-decoration: none;
-        margin-right: 3em;
-        color: white;
-        font-weight: bold;
-        position: relative;
-        transition: all ease-in-out 350ms;}
-
-    li a:hover{color:indigo;
-        transition: all ease-in-out 350ms;}
-    
-    li:first-child{margin-right: auto;
-                    margin-left: 3em;}
-
-    li a::after{content:"";
-            display: block;
-            width:0;
-            height: 0.4em;
-            background-color: indigo;
-            bottom: -1em;
-            position: absolute;
-            transition: all ease-in-out 500ms;}
-
-    li a:hover::after{width: 100%;
-    transition: all ease-in-out 500ms;}
-</style>
-
+        li a::after{content:" ";
+                width: 0%;
+                height: 0.4em;
+                background-color: gold;
+                display: block;
+                position: absolute;
+                bottom: -1em;
+                transition:ease-in-out 500ms;}
+        li a:hover::after{
+            width: 100%;
+            transition:ease-in-out 500ms;
+        }
+    </style>
 </head>
 <body>
-    <div id="header_list">
-        <ul>
+    <div id="heading">
+        <ul id="list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </div>
+
+
 </body>
 </html>

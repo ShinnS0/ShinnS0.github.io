@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+#navi{display: block;
+    width: 100vw;
+    margin: 0;
+    background-color: teal;
+}
+ul{justify-content: flex-end;
+    list-style: none;
+    display: flex;
+    padding: 1em 0;
+    align-items: center;
+    font-weight: bold;
+}
+li:first-child{margin-right: auto;
+                margin-left: 3em;}
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 3em;
+    position: relative;
+}
+li a::after{content: "";
+            width:0;
+            height: 0.4em;
+            bottom: -1em;
+            background-color:gold;
+            display: block;
+            position:absolute;
+            transition: ease-in-out 500ms;
+        }
+        
+li a:hover::after{
+    width: 100%;
+    transition: ease-in-out 500ms;
+}
+}
