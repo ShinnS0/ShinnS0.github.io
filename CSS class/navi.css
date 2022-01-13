@@ -35,4 +35,6 @@ li a:hover::after{
     width: 100%;
     transition: ease-in-out 500ms;
 }
+h1{
+    text-align: center;
 }
