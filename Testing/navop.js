@@ -6,10 +6,8 @@ let links = document.querySelectorAll(".nav-link li");
 
 humberger.addEventListener('click', function (){
     navlink.classList.toggle("open");
+    links.forEach(function (links) {
+            links.classList.toggle("fade");
+        });
     });
 
-// function click(){
-//     humberger.addEventListener(click, () =>{
-//         navlink.classlist.toggle("open");
-//     })
-// };
