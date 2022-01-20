@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline{
+            display: block;
+            width: 100vh;
+            height: 30px;
+            border: 2px solid black;
+        }
+        p{
+            display: inline;
+            border: 2px dashed red;
+            padding: 10px;
+        }
+        /* FLOAT LEASSON */
+        #float{float: left;}
+        #clear{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Layout</h1>
+    
+    <a href="#" class="inline">Facebook</a>
+    <a href="#" class="inline">Viber</a>
+    <br>
+    <p>Inline elements are can't set width and height, So we use attribute like display > block.</p>
+    <p>Block elements are opposite from inline, we can change block eles to inline eles the previous attribute (display).</p>
+<br><br><hr>
+    <!-- FLOAT LESSON -->
+    <div id="float">
+        <img src="../JavaScript/dom1.png" alt="dom1" width="300px" height="300px">
+    </div>
+    <div id="clear"></div>
+</body>
+</html>

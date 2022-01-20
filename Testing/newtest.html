@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newcss.css">
+
+</head>
+<body>
+    
+    <nav>
+        <div class="humber">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing">
+        <img src="../JavaScript/dom1.png" alt="png" width="250px" height="300px">
+    </section>
+    
+    <script>
+        let hunber = document.querySelector(".humber");
+        let navlink = document.querySelector(".nav-link");
+        let links = document.querySelectorAll(".nav-link li");
+
+        hunber.addEventListener('click',function(){ 
+            navlink.classList.toggle("open");
+        })
+    </script>
+</body>
+</html>

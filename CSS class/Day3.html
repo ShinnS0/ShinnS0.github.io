@@ -58,6 +58,25 @@
     ul li:nth-child(4){
         color: blue;
     }
+    .thank{
+        text-align: center;
+    }
+    /* :empty */
+    p:empty{
+        width: 100%;
+        height: 30px;
+        background-color: teal;
+    }
+    p:empty{
+        width: 100%;
+        height: 20px;
+        background-color: teal;
+    }
+    div:empty{
+        width: 100%;
+        height: 20px;
+        background-color: gray;
+    }
     </style>
 </head>
 <body>
@@ -79,7 +98,7 @@
     <p id="target3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium, minima illo dolores quasi quam in non fuga alias nostrum deleniti qui mollitia sequi eius incidunt est laborum et inventore totam enim, animi nesciunt quos ullam? Dolores dicta quae cupiditate atque dignissimos expedita ad corporis ipsam exercitationem. Veritatis, tempore est.
     </p>
     <hr>
-    <h1>Student registeration form.</h1><br>
+    <h1 class="thank"> <ins>Student registeration form.</ins></h1><br>
     <form action="">
         <label for="name">Name:</label>
         <input type="text" name="" id="name" placeholder="Mg Mg" required>
@@ -145,8 +164,9 @@
 		</fieldset>
 		<br><br>
 		<p></p>
-		<p>Thank You</p>
+		<p class="thank">Thank You</p>
 		<p></p>
+        <div></div>
     </form>
 </body>
 </html>

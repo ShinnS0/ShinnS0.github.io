@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* GRID LESSON */
+        div.grids,div.grid1,div.gridadd{
+            display: grid;
+            grid-template-columns: auto auto auto 300px;
+        }
+        div.grids div, div.grid1 div, div.gridadd div{
+            padding: 20px;
+            text-align: center;
+            color:black;
+            font-weight: bold;
+        }
+        .grid1{
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        .grids{
+            grid-gap: 20px;
+        }
+        .adding{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- GRID LESSON -->
+    <h1>Grid</h1>
+    <div class="grids">
+        <div style="background-color: pink;">1</div>
+        <div style="background-color: teal;">2</div>
+        <div style="background-color: red;">3</div>
+        <div style="background-color: yellow;">4</div>
+        <div style="background-color: lightblue;">5</div>
+        <div style="background-color: blueviolet;">6</div>
+        <div style="background-color: lightseagreen;">7</div>
+        <div style="background-color: green;">8</div>
+    </div>
+
+    <h1>Grid 2</h1>
+    <div class="grid1">
+        
+        <div style="background-color: pink;">1</div>
+        <div style="background-color: teal;">2</div>
+        <div style="background-color: red;">3</div>
+        <div style="background-color: yellow;">4</div>
+        <div style="background-color: lightblue;">5</div>
+        <div style="background-color: blueviolet;">6</div>
+        <div style="background-color: lightseagreen;">7</div>
+        <div style="background-color: green;">8</div>
+    </div>
+
+    <h1>Grid Add</h1>
+    <div class="gridadd">
+        
+        <div style="background-color: pink;" class="adding">1</div>
+        <div style="background-color: teal;">2</div>
+        <div style="background-color: red;">3</div>
+        <div style="background-color: yellow;">4</div>
+        <div style="background-color: lightblue;">5</div>
+        <div style="background-color: blueviolet;">6</div>
+        <div style="background-color: lightseagreen;">7</div>
+        <div style="background-color: green;">8</div>
+    </div>
+</body>
+</html>

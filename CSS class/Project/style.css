@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: nice;
+    src: url(images/FancyMatterPersonalUse-lg5Ve.otf);
+}
+/* Navigation bar */
+.navigation{
+    height: 95px;
+    /* background-color: gray; */
+}
+.brand{
+    display: inline-block;
+}
+.daisy{
+    margin-top: 7px;
+    margin-left: 25px;
+}
+.brand-name{
+    margin-top: -70px;
+    margin-left: 105px;
+    color: lightseagreen;
+    font-family: cursive;
+    font-size: 17px;
+    pointer-events: none;
+}
+nav ul{
+    float: right;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;  
+    margin-top: 35px;
+    margin-right: 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: 500ms ease-in-out;
+}
+li a::after{content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: lightseagreen;
+    transition: 500ms ease-in-out;
+}
+li a:hover::after{
+    width: 100%;
+    transition: 500ms ease-in-out;
+}
+.nav-links li a:hover{
+    color: lightseagreen;
+    /* letter-spacing: 2px; */
+    transition: 500ms ease-in-out;
+}
+/* End navigation */
+.backg{
+    height: 550px;
+    width: 100%;
+}
+.bg-text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.head{
+    font-family:nice;
+    font-weight: unset;
+    margin-bottom: 20px;
+}
+.paragraph{
+    font-size: 18px;
+    font-weight: unset;
+}
+
+.shop{font-weight: bold;
+    background-color: white;
+    border: 1px solid #2173a1;
+    color: #2173a1;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+.shop:hover{
+    background-color: #2173a1;
+    color: white;
+    transition: 300ms ease;
+}

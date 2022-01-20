@@ -7,47 +7,49 @@
     <title>Document</title>
 
     <style>
-        body{
-            margin: 0;
-            background-color: darkturquoise;
+        *{margin: 0;
+        padding: 0;
         }
-        #heading{width: 100vw;
-            margin: 0;
-            background-color: darkslategray;
-        }
-        ul{list-style: none;
-            display: flex;
-            padding: 1em 0;
-            margin: 0;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        li a{margin-right: 3em;
-            display: flex;
-            text-decoration: none;
+        #heading{margin: 0;
+            background-color: teal;
             position: relative;
-            color: floralwhite;
-            transition:ease-in-out 500ms;
+            width: 100vw;
+        }
+        ul{align-items: center;
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            padding: 1em 0;
+            font-weight: bold;
+        }
+        li a{position: relative;
+            text-decoration: none;
+            color: white;
+            margin-right: 3em;
+            transition: 500ms all ease-in-out;
         }
         li a:hover{
-            color: gold;
-            transition:ease-in-out 500ms;
+            color: yellow;
+            transition: 500ms all ease-in-out;
         }
-        li:first-child{margin-right: auto;
-        margin-left: 3em;}
-
-        li a::after{content:" ";
-                width: 0%;
-                height: 0.4em;
-                background-color: gold;
-                display: block;
-                position: absolute;
-                bottom: -1em;
-                transition:ease-in-out 500ms;}
+        li:first-child{
+            margin-right: auto;
+            margin-left: 3em;
+        }
+        li a::after{content:"";
+            height: 0.4em;
+            width: 0%;
+            background-color: yellow;
+            display: block;
+            bottom: -1em;
+            position: absolute;
+            transition: 500ms all ease-in-out;
+        }
         li a:hover::after{
             width: 100%;
-            transition:ease-in-out 500ms;
+            transition: 500ms all ease-in-out;
         }
+        
     </style>
 </head>
 <body>
