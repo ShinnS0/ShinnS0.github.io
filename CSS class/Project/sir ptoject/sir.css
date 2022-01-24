@@ -151,12 +151,12 @@ li a:hover::after{
     float: left;
 }
 .firsttext{
-    margin-top: -35px;
+    margin-top: -45px;
     margin-left: 570px;
     padding: 50px;
 }
 .title{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 20px;
 }
 .ptag{
