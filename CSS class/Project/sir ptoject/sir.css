@@ -42,9 +42,9 @@ nav ul{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    transition: 500ms ease-in-out;
+    transition: 500ms ease-out;
 }
-li a::after{content: "";
+/* li a::after{content: "";
     display: block;
     width: 0%;
     height: 3px;
@@ -54,11 +54,12 @@ li a::after{content: "";
 li a:hover::after{
     width: 100%;
     transition: 500ms ease-in-out;
-}
+} */
 .nav-links li a:hover{
     color: lightseagreen;
     /* letter-spacing: 2px; */
-    transition: 500ms ease-in-out;
+    transition: 500ms ease-out;
+    font-size: 17px;
 }
 /* End navigation */
 .backg{
@@ -90,4 +91,77 @@ li a:hover::after{
     background-color: #2173a1;
     color: white;
     transition: 300ms ease;
+}
+/* Product */
+
+.header{
+    text-align: center;
+}
+.hrbar{
+    width: 100px;
+    height: 3px;
+    background-color: #2173a1;
+    margin: auto;
+    border-radius: 3px;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 40px;
+    text-align: center;
+    grid-gap: 65px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.proimg{
+    border-radius: 7px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgb(0,0,0,.20);
+}
+.red{
+    color: red;
+}
+/* ABOUT */
+.about{
+    background-image: url(Imageback.jpg);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.about div{
+    padding: 50px;
+}
+.did{
+    width: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pack{
+    margin-top: 50px;
+}
+.howto{
+    margin-left: 40px;
+}
+.packimg{
+    margin-top: 30px;
+    margin-left: 40px;
+    float: left;
+}
+.firsttext{
+    margin-top: -35px;
+    margin-left: 570px;
+    padding: 50px;
+}
+.title{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ptag{
+    padding-top: 5px;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-align: justify;
 }
