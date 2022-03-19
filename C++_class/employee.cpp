@@ -23,10 +23,15 @@ class Employee{
         void salaryIncrease(int amount){
             this->salary += amount;
         }
-        void totalSalary(int total){
-            this->salary += total;
-        }
+       
 };
+        void totalSalary(){
+            this->salary = salary;
+            int total = total + salary;
+            return total;
+        }
+        cout << "Total Salary : " << total << endl;
+        
 int main(){
     Employee emp[4];
     //access employee data from user input
@@ -59,11 +64,13 @@ int main(){
     //Display total
     for(int i=0;i<4;i++){
         emp[i].totalSalary();
-    }
-     cout << "Total salary : " << endl;
-    for(int i=0;i<4;i++){
-        emp[i].displayInfo2();
-    }
+       return total; 
+    } 
+    // cout << "Total Salary : " << total << endl;
+    
+    
+  
+
    
     return 0;
 }

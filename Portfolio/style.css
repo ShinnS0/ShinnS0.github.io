@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height:10vh;
+    background-color:white;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin-left: auto;
+    align-items: center;
+}
+li a{
+    position: relative;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 4em;
+}
+li:first-child{
+    margin-right: auto;
+    font-size: 20px;
+    margin-left: 4em;
+}
+.CV{
+    background-color:turquoise;
+    padding: 15px 20px;
+    border-radius: 55px;
+    border: 1px turquoise;
+    transition:500ms all ease-out;
+}
+.CV:hover{
+    background-color:lightblue;
+    transition:500ms all ease-out;
+}
+
+/* artical */
+.mybody{
+    background-color: lightcyan;
+    height:100%;
+    border-radius: 5px;
+}
+.profile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    /* background-color: gray; */
+}
+img{
+    border-radius: 50%;
+}
+.intro{
+    position:absolute;
+    margin-top: -5%;
+    margin-left: 32%;
+}
