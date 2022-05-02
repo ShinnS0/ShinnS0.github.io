@@ -1,4 +1,3 @@
-for i in range(n):
-    
-#     for j in range(i-1):
-#         print(' ',end='*')
+file=open('expenselist.json','w')
+    # file.write(json.dumps(myjson)) 
+    # file.close()

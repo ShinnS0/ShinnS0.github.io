@@ -2,17 +2,17 @@
 using namespace std;
 class Employee{
     private:
+        int total; 
         int salary;
         string name;
-        int total;
     public:
         
         Employee(){
         }
         Employee(int salary,string name){
+            this->total=total;
             this->salary=salary;
             this->name=name;
-            this->total=total;
         }
         int getSalary(){
             return this->salary;
@@ -23,20 +23,23 @@ class Employee{
         void salaryIncrease(int amount){
             this->salary += amount;
         }
-       
-};
-        void totalSalary(){
-            this->salary = salary;
+        void totalSalary(){ 
             int total = total + salary;
-            return total;
         }
-        cout << "Total Salary : " << total << endl;
+        void display(){
+            int total;
+            cout << "Total salary: "<< total<< endl;
+        }
+    
+};
+       
         
 int main(){
     Employee emp[4];
     //access employee data from user input
     int salary;
     string name;
+    int total;
 
     for(int i=0;i<4;i++){
         cout << "Enter employee : " << i+1 << "Infomation : " << endl;
@@ -57,20 +60,18 @@ int main(){
         emp[i].salaryIncrease(100);
     }
     //display info
-     cout << "\n_________Updated Employee List Information_________\n";
+    cout << "\n_________Updated Employee List Information_________\n";
     for(int i=0;i<4;i++){
         emp[i].displayInfo();
     }
-    //Display total
+    //Total salary
     for(int i=0;i<4;i++){
         emp[i].totalSalary();
-       return total; 
     } 
-    // cout << "Total Salary : " << total << endl;
-    
-    
-  
+    //display total salary
+    for(int i=0;i<1;i++){
+        emp[i].display();
+    } 
 
-   
     return 0;
 }
