@@ -5,8 +5,9 @@
 }
 
 nav{
-    height:13vh;
+    height:12vh;
     background-color:lightgray;
+    border-radius: 15px;
 }
 .nav-links{
     display: flex;
