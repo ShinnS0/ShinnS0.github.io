@@ -1,0 +1,38 @@
+*{
+    font-style:oblique;
+    font-weight: bold;
+}
+/*form*/
+form{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+/*Input*/
+input[type="text"],[type="number"]{
+    padding: 8px 20px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline-color: teal;
+}
+input[type="text"]:focus,[type="number"]:focus{
+    padding: 8px 35px;
+}
+input[type="radio"]{
+    outline-color: teal;
+}
+
+/*Button*/
+button{
+    background-color:lightseagreen;
+    padding: 7px 15px;
+    border:1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color:whitesmoke;
+    outline-color: teal;
+}
+button:hover{
+    border: 1px solid lightseagreen;
+    color: white;
+}

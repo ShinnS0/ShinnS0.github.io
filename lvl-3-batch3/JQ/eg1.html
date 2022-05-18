@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Form -->
+    <form action="" id="myform">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <br>
+        <br>
+        <input type="number" name="age" id="age" placeholder="Age">
+        <br>
+        <br>
+        <div id='status'>
+            <input type="radio" id="radio-1" name="status" value="single" />Single.
+            <input type="radio" id="radio-2" name="status" value="marriaged" /> Marriaged.
+        </div>
+        <br>
+        <input type="text" name="spouse" id="spouse" placeholder="Spouse">
+        <br>
+        <br>
+        <button>Save Info</button>
+    </form>
+
+    <!-- Jquery -->
+    <script>
+        $(function(){
+            $("button").on("click",function(e){
+                var value1 = $("#radio-1:checked").val();
+                var value2 = $("#radio-2:checked").val();
+                if(value1){
+                    alert($("#name").val() + ", Age " + $("#age").val() +" is Single!");
+                }else if(value2){
+                    alert($("#name").val() + ", Age " + $("#age").val() +" is marriaged!" + "\nSpouse name is " + $("#spouse").val());
+                }
+            })
+            
+        })
+    </script>
+</body>
+</html>

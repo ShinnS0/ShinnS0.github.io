@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Tester!</title>
+
+    <!-- For CSS -->
+    <style>
+    h2{text-shadow: 5px 5px 5px gray;}
+    button{
+        background-color:lightskyblue;
+        padding: 8px 20px;
+        border:1px solid whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        color:blue;
+    }
+    button:hover{
+        background-color: lightseagreen;
+        border: 2px solid lightskyblue;
+        color: white;
+    }
+
+    </style>
+
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    
+    <!-- custom -->
+    <script src="custom.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert('Ok!')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h2 style="text-align: center; color:teal">Hello world!</h2>
+    <button>Click</button>
+</body>
+</html>

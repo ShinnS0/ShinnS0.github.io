@@ -166,7 +166,7 @@ fieldset{border:0;
 .info{ padding: 30px 50px 0 50px;
          display:block;}
 
-.info input { border: 1px solid#fff;
+.info input { border: 1px solid;
              box-shadow :1px;
              color:#636466;
          padding: 5px 2px 0 5px ;

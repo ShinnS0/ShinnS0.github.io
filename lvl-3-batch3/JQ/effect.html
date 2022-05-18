@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    <script>
+        $(function(param){
+            $("#hidebtn").on("click",function(){
+                $("p").hide();
+            })
+
+            $("#showbtn").on("click",function(){
+                $("p").show("fast");
+            })
+
+            $("#togglebtn").on("click",function(){
+                $("p").toggle();
+            })
+
+            $("#fadetobtn").on("click",function(){
+                $("p").fadeTo("slow",0.4);
+            })
+
+            $("#slidedownbtn").on("click",function(){
+                $("p").slideDown("slow");
+            })
+
+            $("#movebtn").on("click",function(){
+                $("#mydiv").animate({left:'250px'});
+            })
+
+            $("#chainning").on("click",function(param){
+                $("#p1").css("color","red").slideUp(2000).slideDown(2000)
+            })
+
+            $("#mybtn").on("click",function(param){
+                var h1=$("h1")
+                if(!h1.hasClass("red")){
+                    h1.addClass("red");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Natus asperiores doloremque nostrum, distinctio earum minus 
+         sit amet consectetur adipisicing elit. Ullam, distinctio. 
+         Non iste repellendus cupiditate. Reiciendis sint obcaecati minima eum cum.</p>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Saepe veniam delectus eligendi consectetur culpa dolor, illo nobis, dignissimos modi dolores vitae.
+          Saepe, nisi optio. Optio placeat voluptatum perferendis corrupti quasi!</p>
+
+    <h1>Hello JQ effect!</h1>
+
+        <div id="mydiv" style="width: 100px; height: 100px; background-color:tomato; position:relative;"></div>
+
+        <button id="hidebtn">Hide</button>
+        <button id="showbtn">Show</button>
+        <button id="togglebtn">Toggle</button>
+        <button id="fadetobtn">FadeTo</button>
+        <button id="slidedownbtn">SlideDown</button>
+
+        <button id="movebtn">Move left</button>
+
+        <button id="chainning">Chainning</button>
+        <button id="mybtn">Add or Remove</button>
+</body>
+</html>

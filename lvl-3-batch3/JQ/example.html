@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#submit").on("click",function(){
+                $("#choose").on("change",function(event){
+                    var choose = $(this).val();
+    
+                    if(choose == 1){
+                       alert("Single");
+                    }else{
+                        alert("Marriaged!");
+                    }
+                    event.preventDefault();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <form action="" id="myform">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <br>
+        <br>
+        <input type="number" name="age" id="age" placeholder="Age">
+        <br>
+        <br>
+
+        <div id="choose" >
+            <input type="radio" id="status" name="status" value="1">
+            <label for="single">Single</label>
+            <input type="radio" id="status" name="status" value="2">
+            <label for="marriaged">Marriaged</label>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Save" id="submit">
+    </form>
+</body>
+</html>

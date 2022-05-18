@@ -6,7 +6,7 @@
 
 nav{
     height:12vh;
-    background-color:lightgray;
+    background-color:#212529;
     border-radius: 15px;
 }
 .nav-links{
@@ -19,7 +19,7 @@ nav{
 li a{
     position: relative;
     text-decoration: none;
-    color: Black;
+    color: gray;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 3em;
@@ -30,6 +30,7 @@ li:first-child{
     margin-left: 3em;
 }
 .CV{
+    color: black;
     background-color:turquoise;
     padding: 15px 20px;
     border-radius: 55px;
