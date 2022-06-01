@@ -1,0 +1,24 @@
+input{
+    padding: 8px 20px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline-color: teal;
+}
+input:focus{
+    padding: 8px 35px;
+}
+
+button{
+    background-color:lightseagreen;
+    padding: 7px 15px;
+    border:1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color:whitesmoke;
+    outline-color: teal;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    border: 1px solid lightseagreen;
+    color: white;
+}
