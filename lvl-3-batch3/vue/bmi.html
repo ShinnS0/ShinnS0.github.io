@@ -76,10 +76,10 @@
                 <p>Ur BMI is : {{result}}</p>
             </div>
 
-            <div V-If ="result<18.5 && result!=0"><h3 style="color: orange; font-weight:bold">{{result1}}</h3></div>
+            <div V-If ="result<18.5 && result!=0"><h3 style="color:blue; font-weight:bold">{{result1}}</h3></div>
             <div v-else-if="result>18.5 && result<25"><h3 style="color: Green; font-weight:bold">{{result2}}</h3></div>
             <div v-else-if="result>25 && result<30"><h3 style="color: red; font-weight:bold">{{result3}}</h3></div>
-            <div v-else-if="result>30"><h3 style="color:Blue; font-weight:bold">{{result4}}</h3></div>
+            <div v-else-if="result>30"><h3 style="color:orange; font-weight:bold">{{result4}}</h3></div>
             
         </form>
     </div>
