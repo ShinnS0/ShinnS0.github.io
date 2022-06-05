@@ -1,0 +1,77 @@
+/* Memes scroll bar */
+.memes_bar{
+    height: 100px;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0 0 -10px;
+    border: 2px solid gray;
+}
+.img_bar{
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    border-right: 3px solid #fff;
+    cursor: pointer;
+}
+.memes_bar::-webkit-scrollbar {
+    background: #fff;
+    height: 20px;
+}
+/* End scroll bar */
+
+.main_page{
+    border: 1px solid gray;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Preview start */
+.preview{
+    padding:  0 20px 0 0;
+    /* position: relative; */
+    float:left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.img_preview img{
+    height: 650px;
+    width: 550px;
+    padding: 10px;
+}
+.clear{
+    clear: both;
+}
+
+/* Add text */
+.add_text input{
+    width: 450px;
+    margin-bottom: 20px;
+    padding: 16px;
+    outline: none;
+    border: 2px solid gray;
+    border-color:teal;
+    border-radius: 5px;
+}
+.add_text button{
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: 1px solid gray;
+    border-color: lightblue;
+    border-radius: 5px;
+}
+.txt1{
+    position: absolute;
+    top:25%;
+    left:15%;
+    /* color: white; */
+}
+.txt2{
+    position: absolute;
+    top:80%;
+    left:15%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Assignment!</title>
+    
+    <link rel="stylesheet" href="vue_assign.css">
+    <link rel="stylesheet" href="../Lesson/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    memes:[],
+                    preview:null,
+                    text1:"",
+                    text2:"",
+                    text3:"",
+                }
+            },
+            methods:{
+                getMemes(){
+                    axios.get('https://api.imgflip.com/get_memes')
+                        .then(response =>{
+                            console.log(response.data);
+                            if(response.data.success == true){
+                                this.memes = response.data.data.memes;
+                            }
+                        })
+                        .catch(err => {
+                            console.log(err)
+                        })
+                }
+            },
+            mounted(){
+                this.getMemes();
+            },
+        })
+    </script>
+</head>
+<body>
+    <div id="app">
+        <H1 style="text-align:center;">Memes Genarator</H1>
+        <div class="main_page">
+            <div class="preview">
+                <div class="img_preview">
+                    <img src="../vue/images/profile.png" alt="">
+                </div>
+            </div>
+
+            <div class="memes_bar">        
+                <div  v-for="(memes,index) in memes" class="img_bar" >
+                    <img :src="memes.url" :alt="memes.name" style="height:80px; width:60px;">
+                </div>
+            </div>
+            <br>
+            <form action="" class="add_text">
+                <input type="text" name="" id="1st-text" placeholder="Text N0.1" v-model="text1">
+                <br>
+                <input type="text" id="2nd-text" placeholder="Text NO.2" v-model="text2">
+                <br>
+                <div class="add_txt"></div>
+                <br>
+                <button type="button">Generate</button>
+                <h1 class="txt1">{{text1}}</h1>
+                <h1 class="txt2">{{text2}}</h1>
+            </form>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script>
+        const mountedApp = app.mount("#app");
+    </script>
+</body>
+</html>
