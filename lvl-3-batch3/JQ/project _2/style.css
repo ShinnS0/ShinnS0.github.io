@@ -19,6 +19,7 @@
     overflow-y: hidden;
     margin: 0 auto;
     white-space: nowrap;
+    cursor: pointer;
 }
 .img_memes{
     width: 60px;

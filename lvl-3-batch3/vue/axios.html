@@ -28,16 +28,16 @@
                         })
                 }
             },
-            mounted(){
-                this.getMemes();
-            },
+            //mounted(){
+            //    this.getMemes();
+            //},
         })
     </script>
 
 </head>
 <body>
     <div id="app">
-        <!-- <button type="button" @click="getMemes">Get memes!</button> -->
+        <button type="button" @click="getMemes">Get memes!</button>
         <!-- {{memes.length}} -->
 
         <div v-if="memes.length > 0">

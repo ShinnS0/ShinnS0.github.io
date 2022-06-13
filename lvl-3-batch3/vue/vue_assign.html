@@ -11,7 +11,6 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
-
     <script>
         const app = Vue.createApp({
             data(){
@@ -21,41 +20,47 @@
                     text1:"",
                     text2:"",
                     text3:"",
+                    img_url:"",
                 }
             },
             methods:{
                 getMemes(){
                     axios.get('https://api.imgflip.com/get_memes')
-                        .then(response =>{
-                            console.log(response.data);
-                            if(response.data.success == true){
-                                this.memes = response.data.data.memes;
-                            }
-                        })
-                        .catch(err => {
-                            console.log(err)
-                        })
+                    .then(response =>{
+                        console.log(response.data);
+                        if(response.data.success == true){
+                            this.memes = response.data.data.memes;
+                        }
+                    })
+                    .catch(err => {
+                        console.log(err)
+                    })
+                },
+                img_preview(){
+                    var index = this.memes("id");
+                    this.img_id = [this.memes,index].id;
+                    
                 }
-            },
-            mounted(){
-                this.getMemes();
             },
         })
     </script>
 </head>
 <body>
     <div id="app">
+        {{img_url}}
         <H1 style="text-align:center;">Memes Genarator</H1>
         <div class="main_page">
             <div class="preview">
-                <div class="img_preview">
-                    <img src="../vue/images/profile.png" alt="">
-                </div>
-            </div>
 
+                <div class="img_preview" v-for="memes in memes">
+                    <img :src="memes.url" :alt="memes.name">
+                </div>
+
+            </div>
+            <button @click="getMemes">Get Memes!</button>
             <div class="memes_bar">        
                 <div  v-for="(memes,index) in memes" class="img_bar" >
-                    <img :src="memes.url" :alt="memes.name" style="height:80px; width:60px;">
+                    <img :src="memes.url" :alt="memes.name" style="height:80px; width:60px;" @click="img_preview">
                 </div>
             </div>
             <br>

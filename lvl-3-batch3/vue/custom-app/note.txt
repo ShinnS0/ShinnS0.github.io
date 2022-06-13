@@ -1,0 +1,23 @@
+Vue Day1
+
+- node_modules for package
+
+- public => Entry point
+
+- src => Source file
+    => component (.vue)
+        - Cart item
+
+    => view (.vue)
+        - Home,Shop,About
+
+- .vue file
+    -> template (html)
+    -> script (js)
+    -> style (css)
+
+- ES6
+
+Day2
+
+-
